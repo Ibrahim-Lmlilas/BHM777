@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background: linear-gradient(#15041a, #000000);
+    height: 100vh;
+    font-family: system-ui; 
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+header.logo{
+    font-size: 20px;
+}
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+
+}
+
+header ul li{
+
+    margin-right: 30px;
+}
+
+
+header ul li a{
+padding: 5px 5px;
+border-radius: 20px;
+}
+
+header ul li a:hover, .active {
+    color: black; 
+    background-color: beige;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+.main ::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   height: 80px;
+   width: 100%;
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+    
+    
+}
+.BHM777{
+    color: antiquewhite;
+    font-size: 20px;
+    transform: translateY(-150px);
+    
+   
+}
+.content{
+    color: aliceblue;
+    padding: 25px;
+}
+.content h2{
+    margin: 22px;
+    font-size: 30px;
+}
+.content p{
+    margin: 20px;
+}
